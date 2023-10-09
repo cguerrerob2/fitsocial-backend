@@ -1,55 +1,27 @@
 package pe.edu.upao.martes.models;
 
+import jakarta.persistence.*;
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+@Data
+@AllArgsConstructor
+@NoArgsConstructor
+@Entity
+@SequenceGenerator(name = "usuario_seq", sequenceName = "usuario_seq", allocationSize = 1)
 public class Usuario {
-    private String nombre;
-    private String apellidos;
-    private String username;
+    @Id
+    @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "usuario_seq")
+    private Long id;
+
+    private String email;
+
     private String password;
 
-    public Usuario() {
-    }
+    private String country;
 
-    public Usuario(String nombre, String apellidos, String username, String password) {
-        this.nombre = nombre;
-        this.apellidos = apellidos;
-        this.username = username;
-        this.password = password;
-    }
+    private Double height;
 
-    public String getNombre() {
-        return nombre;
-    }
-
-    public void setNombre(String nombre) {
-        this.nombre = nombre;
-    }
-
-    public String getApellidos() {
-        return apellidos;
-    }
-
-    public void setApellidos(String apellidos) {
-        this.apellidos = apellidos;
-    }
-
-    public String getUsername() {
-        return username;
-    }
-
-    public void setUsername(String username) {
-        this.username = username;
-    }
-
-    public String getPassword() {
-        return password;
-    }
-
-    public void setPassword(String password) {
-        this.password = password;
-    }
-
-    @Override
-    public String toString() {
-        return this.getNombre() + " " + this.getApellidos() + "(" + this.username + ")";
-    }
+    private Double weight;
 }
