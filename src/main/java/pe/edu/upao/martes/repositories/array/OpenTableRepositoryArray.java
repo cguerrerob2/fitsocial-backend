@@ -1,7 +1,7 @@
-package pe.edu.upao.martes.repositories;
+package pe.edu.upao.martes.repositories.array;
 
-import org.springframework.stereotype.Repository;
 import pe.edu.upao.martes.models.OpenTable;
+import pe.edu.upao.martes.repositories.interfaces.IOpenTableRepository;
 
 import java.util.ArrayList;
 

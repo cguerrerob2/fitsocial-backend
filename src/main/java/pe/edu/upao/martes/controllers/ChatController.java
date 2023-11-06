@@ -4,6 +4,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.messaging.simp.SimpMessagingTemplate;
 import org.springframework.web.bind.annotation.*;
 import pe.edu.upao.martes.models.ChatMessage;
+import pe.edu.upao.martes.models.Community;
 import pe.edu.upao.martes.services.ChatService;
 
 import java.util.List;
@@ -32,6 +33,16 @@ public class ChatController {
         ChatMessage savedMessage = communityService.saveCommunityChatMessage(message);
         messagingTemplate.convertAndSend("/topic/community-messages", savedMessage);
         return savedMessage;
+    }
+
+    @GetMapping("/createCommunity")
+    public List<Community> listCommunities() {
+        return communityService.listCommunities();
+    }
+
+    @PostMapping("/createCommunity")
+    public Community createCommunity(@RequestBody Community community) {
+        return communityService.createCommunity(community);
     }
 }
 

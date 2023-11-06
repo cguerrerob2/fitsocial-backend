@@ -1,6 +1,7 @@
-package pe.edu.upao.martes.repositories;
+package pe.edu.upao.martes.repositories.array;
 
 import pe.edu.upao.martes.models.Exercises;
+import pe.edu.upao.martes.repositories.interfaces.IExerciseRepository;
 
 import java.util.ArrayList;
 

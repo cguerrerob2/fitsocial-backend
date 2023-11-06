@@ -1,4 +1,4 @@
-package pe.edu.upao.martes.repositories;
+package pe.edu.upao.martes.repositories.interfaces;
 
 import pe.edu.upao.martes.models.ChatMessage;
 

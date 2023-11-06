@@ -35,6 +35,9 @@ dependencies {
 	annotationProcessor("org.projectlombok:lombok")
 	testCompileOnly("org.projectlombok:lombok")
 	testAnnotationProcessor("org.projectlombok:lombok")
+
+	implementation("junit:junit:4.13.2") // Dependencia de JUnit
+	testImplementation("org.mockito:mockito-core:3.9.0") // Dependencia de Mockito
 }
 
 tasks.withType<Test> {

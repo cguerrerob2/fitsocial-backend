@@ -3,7 +3,7 @@ package pe.edu.upao.martes.services;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import pe.edu.upao.martes.models.Exercises;
-import pe.edu.upao.martes.repositories.ExerciseRepository;
+import pe.edu.upao.martes.repositories.repository.ExerciseRepository;
 
 import java.util.List;
 
