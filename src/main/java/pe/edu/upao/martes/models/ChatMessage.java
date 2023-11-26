@@ -25,4 +25,28 @@ public class ChatMessage {
     public long getId() {
         return id;
     }
+
+    public void setSender(String sender) {
+        this.sender = sender;
+    }
+
+    public String getSender() {
+        return sender;
+    }
+
+    public void setContent(String content) {
+        this.content = content;
+    }
+
+    public String getContent() {
+        return content;
+    }
+
+    public void setDate(String date) {
+        this.date = date;
+    }
+
+    public String getDate() {
+        return date;
+    }
 }

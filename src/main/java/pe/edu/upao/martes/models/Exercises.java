@@ -17,4 +17,28 @@ public class Exercises {
     private String title;
     private int reps;
     private String exercises;
+
+    public void setTitle(String title) {
+        this.title = title;
+    }
+
+    public String getTitle() {
+        return title;
+    }
+
+    public void setReps(int reps) {
+        this.reps = reps;
+    }
+
+    public int getReps() {
+        return reps;
+    }
+
+    public void setExercises(String exercises) {
+        this.exercises = exercises;
+    }
+
+    public String getExercises() {
+        return exercises;
+    }
 }
