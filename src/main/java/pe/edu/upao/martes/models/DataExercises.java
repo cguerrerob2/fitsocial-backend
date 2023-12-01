@@ -25,4 +25,12 @@ public class DataExercises {
     private String Rating;
     @Column(name = "Description")
     private String Description;
+
+    public void setMuscleGp(String muscleGp) {
+        this.muscle_gp = muscleGp;
+    }
+
+    public String getMuscleGp() {
+        return muscle_gp;
+    }
 }
